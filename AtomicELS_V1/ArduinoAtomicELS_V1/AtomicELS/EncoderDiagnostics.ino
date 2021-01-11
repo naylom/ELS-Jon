@@ -34,7 +34,7 @@ void DiagnosticsSetup ()
     }
     else
     {
-        if (digitalPinToInterrupt (ACHANNEL_PIN) == -1 || digitalPinToInterrupt (BCHANNEL_PIN) == -1 || digitalPinToInterrupt (ZCHANNEL_PIN) == -1)
+        if (digitalPinToInterrupt (ACHANNEL_PIN) == -1 || digitalPinToInterrupt (BCHANNEL_PIN) == -1 /*|| digitalPinToInterrupt (ZCHANNEL_PIN) == -1*/)
         {
             TerminateProgram (F ("Invalid Config - not all pins selected for channels support interrupts"));
         }
